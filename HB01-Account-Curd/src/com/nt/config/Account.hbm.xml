@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>
+	<class name="com.nt.entity.Account" table="Acc_tab">
+		<!-- Singular id field -->
+		<id name="accNo" column="account_no" type="java.lang.Integer"/>
+		<property name="accName" column="account_name" type="java.lang.String" length="15" />
+		<property name="balance" column="balance" type="java.lang.Double" />
+ 	</class>
+</hibernate-mapping>
